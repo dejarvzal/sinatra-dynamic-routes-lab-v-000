@@ -27,10 +27,10 @@ class App < Sinatra::Base
 
     if params[:operation] = 'add'
       answer = (num1+num2).to_s
-    elsif params[:operation] = 'multiply'
-      answer = (num1*num2).to_s
     elsif params[:operation] = 'subtract'
       answer = (num1-num2).to_s
+    elsif params[:operation] = 'multiply'
+      answer = (num1*num2).to_s
     else params[:operation] = 'divide'
       answer = (num1/num2).to_s
     end
